@@ -1,0 +1,20 @@
+# code your #position_taken? method here!
+def position_taken? (board, position)
+  position.to_i - 1
+  if  board[position] == " " || board[position] == "" || board[position] == nil
+    return false
+  else
+    return true
+end
+end
+
+
+
+def position_taken? (board, position)
+  new_position = position.to_i - 1
+  if   board[new_position] == " "
+    return true
+  elsif board[new_position] == "X" || board[new_position] == "O" || board[new_position] == "" || board[new_position] == nil
+    return !!false
+end
+end
